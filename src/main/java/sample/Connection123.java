@@ -13,7 +13,7 @@ public class Connection123 {
 
 
 
-        java.sql.Connection con1 = DriverManager.getConnection("jdbc:mysql://localhost/inventory", "root", "");
+        java.sql.Connection con1 = DriverManager.getConnection("jdbc:mysql://localhost/savings", "root", "");
 
 
 

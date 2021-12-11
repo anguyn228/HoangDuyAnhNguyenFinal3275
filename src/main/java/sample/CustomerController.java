@@ -25,7 +25,7 @@ public class CustomerController{
 
 
     //a mapping when someone enters file
-    @RequestMapping(value = "/category", method = RequestMethod.GET)
+    @RequestMapping(value = "/customer", method = RequestMethod.GET)
     public String showCategorypage(ModelMap model,@RequestParam(defaultValue = "") String id) throws ClassNotFoundException, SQLException {
 
         service1 = new DatabaseService(connect.connect());

@@ -36,20 +36,20 @@ public class DatabaseService implements DatabaseInterface{
     }
 
     @Override
-    public void delete(String catcode) throws SQLException {
-        String quer1 = "Delete from Category where catcode = ?";
+    public void delete(String custno) throws SQLException {
+        String quer1 = "Delete from Category where custno = ?";
         PreparedStatement query = con.prepareStatement(quer1);
-        query.setString(1, catcode);
+        query.setString(1, custno);
         query.executeUpdate();
 
     }
 
 
     //    The search method
-    public Customer search(String catcode) throws SQLException, ClassNotFoundException{
-        String quer1 = "Select * from category where catcode = ?";
+    public Customer search(String custno) throws SQLException, ClassNotFoundException{
+        String quer1 = "Select * from custno where custname = ?";
         PreparedStatement query = con.prepareStatement(quer1);
-        query.setString(1,catcode);
+        query.setString(1,custno);
 
         ResultSet rs= query.executeQuery();
 
